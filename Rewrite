@@ -3,6 +3,13 @@
 #!author= 7cupt4a
 
 [Rewrite]
+#!饿了么
+^https:\/\/elemecdn.com\/.+\/sitemap reject
+^https:\/\/fuss10.elemecdn.com\/.+\/w\/640\/h\/\d{3,4} reject
+^https:\/\/fuss10.elemecdn.com\/.+\/w\/750\/h\/\d{3,4} reject
+^https:\/\/fuss10.elemecdn.com\/.+\.mp4 reject
+^https:\/\/www1.elecfans.com\/www\/delivery reject
+
 #!携程
 ^https?:\/\/m\.ctrip\.com\/restapi\/[\w\/]+tripAds reject
 
@@ -63,4 +70,4 @@
 ^https:\/\/hfapp-service\.qweather\.net\/v2\.0\/app\/ad\/list\? reject-dict
 
 [MITM]
-hostname = m.ctrip.com,thor.weidian.com,adproxy.autohome.com.cn,api.douban.com,sh-gateway.shihuo.cn,s3plus.meituan.net,flowplus.meituan.net,wmapi.meituan.com,img.meituan.net,api.xiaoheihe.cn,ucmp.sf-express.com,ucmp-static.sf-express.com,mcs-mimp-web.sf-express.com,www.gcores.com,res.pizzahut.com.cn,upload-bbs.mihoyo.com,api.mcd.cn,res.kfc.com.cn,hfapp-service.qweather.net
+hostname =  elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com,m.ctrip.com,thor.weidian.com,adproxy.autohome.com.cn,api.douban.com,sh-gateway.shihuo.cn,s3plus.meituan.net,flowplus.meituan.net,wmapi.meituan.com,img.meituan.net,api.xiaoheihe.cn,ucmp.sf-express.com,ucmp-static.sf-express.com,mcs-mimp-web.sf-express.com,www.gcores.com,res.pizzahut.com.cn,upload-bbs.mihoyo.com,api.mcd.cn,res.kfc.com.cn,hfapp-service.qweather.net
