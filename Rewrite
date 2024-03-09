@@ -4,7 +4,7 @@
 
 [Rewrite]
 #!得物
-^https:\/\/app\.dewu\.com\/api\/v1\/app\/advertisement
+^https:\/\/app\.dewu\.com\/api\/v1\/app\/advertisement reject 
 
 #!饿了么
 ^https:\/\/elemecdn.com\/.+\/sitemap reject
