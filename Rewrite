@@ -3,6 +3,9 @@
 #!author= 7cupt4a
 
 [Rewrite]
+#!大麦
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welcome reject-200
+
 #!得物
 ^https:\/\/app\.dewu\.com\/api\/v1\/app\/advertisement reject 
 
@@ -73,4 +76,4 @@
 ^https:\/\/hfapp-service\.qweather\.net\/v2\.0\/app\/ad\/list\? reject-dict
 
 [MITM]
-hostname =  app.dewu.com,elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com,m.ctrip.com,thor.weidian.com,adproxy.autohome.com.cn,api.douban.com,sh-gateway.shihuo.cn,s3plus.meituan.net,flowplus.meituan.net,wmapi.meituan.com,img.meituan.net,api.xiaoheihe.cn,ucmp.sf-express.com,ucmp-static.sf-express.com,mcs-mimp-web.sf-express.com,www.gcores.com,res.pizzahut.com.cn,upload-bbs.mihoyo.com,api.mcd.cn,res.kfc.com.cn,hfapp-service.qweather.net
+hostname =  acs.m.taobao.com,app.dewu.com,elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com,m.ctrip.com,thor.weidian.com,adproxy.autohome.com.cn,api.douban.com,sh-gateway.shihuo.cn,s3plus.meituan.net,flowplus.meituan.net,wmapi.meituan.com,img.meituan.net,api.xiaoheihe.cn,ucmp.sf-express.com,ucmp-static.sf-express.com,mcs-mimp-web.sf-express.com,www.gcores.com,res.pizzahut.com.cn,upload-bbs.mihoyo.com,api.mcd.cn,res.kfc.com.cn,hfapp-service.qweather.net
