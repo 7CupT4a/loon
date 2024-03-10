@@ -6,7 +6,7 @@
 ^https?:\/\/ugc\.map\.baidu\.com\/govui\/rich_content url reject-200
 
 # > 百度地图_搜索框下足记Tips
-;^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui.*qt=rgc url reject-200
+^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui.*qt=rgc url reject-200
 
 # > 百度地图_搜索推广
 ^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui.*qt=hw url reject-200
@@ -22,9 +22,6 @@
 
 # > 百度地图_我的页面地图动态
 ^https?:\/\/newclient\.map\.baidu\.com\/client\/usersystem\/home\/dynamic url reject-200
-
-[Script]
-https://gist.githubusercontent.com/ddgksf2013/beec132ca0c3570ffa0cf331bce8f82a/raw/baidumap.adblock.conf
 
 [Mitm]
 hostname=180.76.76.200, newclient.map.baidu.com, httpdns.baidubce.com, ugc.map.baidu.com
