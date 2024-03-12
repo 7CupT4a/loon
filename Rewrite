@@ -1,5 +1,5 @@
 #!name= 自用过滤器
-#!desc= 最后更新时间 2024-03-09
+#!desc= 最后更新时间 2024-03-12
 #!author= 7cupt4a
 
 [Rewrite]
@@ -74,6 +74,10 @@
 
 #!和风天气
 ^https:\/\/hfapp-service\.qweather\.net\/v2\.0\/app\/ad\/list\? reject-dict
+
+
+[Script]
+http-response ^https?:\/\/j1\.pupuapi\.com\/client\/marketing\/banner\/v7\?position_types=2(%[A-Z0-9]+)+&store_id script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/PupuSplashAds.js, requires-body=true, timeout=60, tag=PupuSplashAds
 
 [MITM]
 hostname =  acs.m.taobao.com,app.dewu.com,elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com,m.ctrip.com,thor.weidian.com,adproxy.autohome.com.cn,api.douban.com,sh-gateway.shihuo.cn,s3plus.meituan.net,flowplus.meituan.net,wmapi.meituan.com,img.meituan.net,api.xiaoheihe.cn,ucmp.sf-express.com,ucmp-static.sf-express.com,mcs-mimp-web.sf-express.com,www.gcores.com,res.pizzahut.com.cn,upload-bbs.mihoyo.com,api.mcd.cn,res.kfc.com.cn,hfapp-service.qweather.net
