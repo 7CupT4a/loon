@@ -8,27 +8,27 @@
 ^https:\/\/hd\.xiaojukeji\.com\/d - reject-dict
 
 [Script]
-http-response ^https:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/me script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js, requires-body=true, timeout=60, tag=Didichuxing
+http-response ^https:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/me script-path=https://raw.githubusercontent.com/7CupT4a/loon/main/didi.js, requires-body=true, timeout=60, tag=Didichuxing
 
-http-response ^https:\/\/daijia\.kuaidadi\.com\/gateway script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js, requires-body=true, timeout=60, tag=Didichuxing
+http-response ^https:\/\/daijia\.kuaidadi\.com\/gateway script-path=https://raw.githubusercontent.com/7CupT4a/loon/main/didi.js, requires-body=true, timeout=60, tag=Didichuxing
 
-http-response ^https:\/\/freight\.xiaojukeji\.com\/gateway script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js, requires-body=true, timeout=60, tag=Didichuxing
+http-response ^https:\/\/freight\.xiaojukeji\.com\/gateway script-path=https://raw.githubusercontent.com/7CupT4a/loon/main/didi.js, requires-body=true, timeout=60, tag=Didichuxing
 
-http-response ^https:\/\/daijia\.kuaidadi\.com:443\/gateway script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js, requires-body=true, timeout=60, tag=Didichuxing
+http-response ^https:\/\/daijia\.kuaidadi\.com:443\/gateway script-path=https://raw.githubusercontent.com/7CupT4a/loon/main/didi.js, requires-body=true, timeout=60, tag=Didichuxing
 
-http-response ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/xpget script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js, requires-body=true, timeout=60, tag=Didichuxing
+http-response ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/xpget script-path=https://raw.githubusercontent.com/7CupT4a/loon/main/didi.js, requires-body=true, timeout=60, tag=Didichuxing
 
-http-response ^https:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js, requires-body=true, timeout=60, tag=Didichuxing
+http-response ^https:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds script-path=https://raw.githubusercontent.com/7CupT4a/loon/main/didi.js, requires-body=true, timeout=60, tag=Didichuxing
 
-http-response ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js, requires-body=true, timeout=60, tag=Didichuxing
+http-response ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget script-path=https://raw.githubusercontent.com/7CupT4a/loon/main/didi.js, requires-body=true, timeout=60, tag=Didichuxing
 
-http-response ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/fast script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js, requires-body=true, timeout=60, tag=Didichuxing
+http-response ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/fast script-path=https://raw.githubusercontent.com/7CupT4a/loon/main/didi.js, requires-body=true, timeout=60, tag=Didichuxing
 
-http-response ^https:\/\/conf\.diditaxi\.com\.cn\/dynamic\/conf script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js, requires-body=true, timeout=60, tag=Didichuxing
+http-response ^https:\/\/conf\.diditaxi\.com\.cn\/dynamic\/conf script-path=https://raw.githubusercontent.com/7CupT4a/loon/main/didi.js, requires-body=true, timeout=60, tag=Didichuxing
 
-http-response ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/core script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js, requires-body=true, timeout=60, tag=Didichuxing
+http-response ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/core script-path=https://raw.githubusercontent.com/7CupT4a/loon/main/didi.js, requires-body=true, timeout=60, tag=Didichuxing
 
-http-response ^https:\/\/api\.udache\.com\/gulfstream\/pre-sale\/v1\/other\/pGetSceneList script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js, requires-body=true, timeout=60, tag=Didichuxing
+http-response ^https:\/\/api\.udache\.com\/gulfstream\/pre-sale\/v1\/other\/pGetSceneList script-path=https://raw.githubusercontent.com/7CupT4a/loon/main/didi.js, requires-body=true, timeout=60, tag=Didichuxing
 
 [MITM]
 hostname = hd.xiaojukeji.com, common.diditaxi.com.cn, freight.xiaojukeji.com, daijia.kuaidadi.com, ct.xiaojukeji.com, res.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, 120.241.142.12, 116.85.2.52, 123.207.209.57, 120.241.142.11, 116.85.2.5, 116.85.3.13, 120.241.143.11, 120.241.143.6, 123.207.209.142, 123.207.209.177, 116.85.2.21, 123.207.209.56, 112.53.55.225, 123.207.209.42, 116.85.2.22, 123.207.209.160, 116.85.3.11, 123.207.209.143, 123.207.209.41, 116.85.2.4, 116.85.2.41, 123.207.209.16, 116.85.2.12, 123.207.209.134
