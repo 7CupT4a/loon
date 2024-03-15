@@ -1,6 +1,6 @@
 #!name=滴滴出行
 #!desc=Didichuxing
-#!author=怎么肥事
+#!author=自用测试
 #!update=2024-03-15 13:27
 #!ps=需要分流禁用掉 ip-cidr, 123.207.209.39/32, ip-cidr, 123.207.209.60/32
 
