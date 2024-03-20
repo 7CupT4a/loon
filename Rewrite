@@ -3,7 +3,7 @@
 #!author= 7cupt4a
 
 [Rewrite]
-# 货拉拉 微信小程序净化
+#!货拉拉 微信小程序净化
 ^https:\/\/qapi\.huolala\.cn\/ads reject-dict
 ^https:\/\/appuser-static\.huolala\.cn\/imgs reject-dict
 ^https:\/\/qapi\.huolala\.cn\/home_new_user reject-dict
