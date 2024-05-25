@@ -1,8 +1,11 @@
 #!name= 自用过滤器
-#!desc= 最后更新时间 2024-03-15
+#!desc= 最后更新时间 2024-05-25
 #!author= 7cupt4a
 
 [Rewrite]
+#!飞智游戏厅
+^https:\/\/api\.flydigi\.com\/android\/v2\/ad reject-dict
+
 #!货拉拉 微信小程序净化
 ^https:\/\/qapi\.huolala\.cn\/ads reject-dict
 ^https:\/\/appuser-static\.huolala\.cn\/imgs reject-dict
@@ -87,4 +90,4 @@
 
 
 [MITM]
-hostname =  flowplus.meituan.net, img.meituan.net, s3plus.meituan.net,qapi.huolala.cn, appuser-static.huolala.cn,acs.m.taobao.com,app.dewu.com,elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com,m.ctrip.com,thor.weidian.com,adproxy.autohome.com.cn,api.douban.com,sh-gateway.shihuo.cn,api.xiaoheihe.cn,ucmp.sf-express.com,ucmp-static.sf-express.com,mcs-mimp-web.sf-express.com,www.gcores.com,res.pizzahut.com.cn,upload-bbs.mihoyo.com,api.mcd.cn,res.kfc.com.cn,hfapp-service.qweather.net
+hostname =  api.flydigi.com,flowplus.meituan.net, img.meituan.net, s3plus.meituan.net,qapi.huolala.cn, appuser-static.huolala.cn,acs.m.taobao.com,app.dewu.com,elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com,m.ctrip.com,thor.weidian.com,adproxy.autohome.com.cn,api.douban.com,sh-gateway.shihuo.cn,api.xiaoheihe.cn,ucmp.sf-express.com,ucmp-static.sf-express.com,mcs-mimp-web.sf-express.com,www.gcores.com,res.pizzahut.com.cn,upload-bbs.mihoyo.com,api.mcd.cn,res.kfc.com.cn,hfapp-service.qweather.net
