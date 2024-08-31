@@ -99,5 +99,4 @@
 
 
 [Mitm]
-hostname =
-aes.acfun.cn,api-new.app.acfun.can,api.flydigi.com,flowplus.meituan.net, img.meituan.net, s3plus.meituan.net,qapi.huolala.cn, appuser-static.huolala.cn,acs.m.taobao.com,app.dewu.com,elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com,m.ctrip.com,thor.weidian.com,adproxy.autohome.com.cn,api.douban.com,sh-gateway.shihuo.cn,api.xiaoheihe.cn,ucmp.sf-express.com,ucmp-static.sf-express.com,mcs-mimp-web.sf-express.com,www.gcores.com,res.pizzahut.com.cn,api.mcd.cn,res.kfc.com.cn,hfapp-service.qweather.net
+hostname = aes.acfun.cn, api-new.app.acfun.can, api.flydigi.com, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, qapi.huolala.cn, appuser-static.huolala.cn, acs.m.taobao.com, app.dewu.com,elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, m.ctrip.com, thor.weidian.com, adproxy.autohome.com.cn,api.douban.com, sh-gateway.shihuo.cn, api.xiaoheihe.cn, ucmp.sf-express.com, ucmp-static.sf-express.com, mcs-mimp-web.sf-express.com, www.gcores.com, res.pizzahut.com.cn, api.mcd.cn, res.kfc.com.cn, hfapp-service.qweather.net
