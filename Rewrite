@@ -2,7 +2,7 @@
 #!desc= 最后更新时间 2024-09-01
 #!author= 7cupt4a
 
-[Rule]
+[Rewrite]
 # Acfun
 ^https?:\/\/aes\.acfun\.cn\/s\?adzones  reject
 ^https?:\/\/api-new\.app\.acfun\.cn\/rest\/app\/flash\/screen\/  reject
