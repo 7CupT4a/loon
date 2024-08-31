@@ -1,54 +1,54 @@
 #!name= 自用过滤器
-#!desc= 最后更新时间 2024-08-11
+#!desc= 最后更新时间 2024-09-01
 #!author= 7cupt4a
 
-[Rewrite]
-#!Acfun
+[Rule]
+# Acfun
 ^https?:\/\/aes\.acfun\.cn\/s\?adzones  reject
 ^https?:\/\/api-new\.app\.acfun\.cn\/rest\/app\/flash\/screen\/  reject
 
-#!飞智游戏厅
+# 飞智游戏厅
 ^https:\/\/api\.flydigi\.com\/android\/v2\/ad reject-dict
 
-#!货拉拉 微信小程序净化
+# 货拉拉 微信小程序净化
 ^https:\/\/qapi\.huolala\.cn\/ads reject-dict
 ^https:\/\/appuser-static\.huolala\.cn\/imgs reject-dict
 ^https:\/\/qapi\.huolala\.cn\/home_new_user reject-dict
 ^https:\/\/qapi\.huolala\.cn\/get_service_list reject-dict
 
-#!大麦
+# 大麦
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welcome reject-200
 
-#!得物
+# 得物
 ^https:\/\/app\.dewu\.com\/api\/v1\/app\/advertisement reject 
 
-#!饿了么
+# 饿了么
 ^https:\/\/elemecdn.com\/.+\/sitemap reject
 ^https:\/\/fuss10.elemecdn.com\/.+\/w\/640\/h\/\d{3,4} reject
 ^https:\/\/fuss10.elemecdn.com\/.+\/w\/750\/h\/\d{3,4} reject
 ^https:\/\/fuss10.elemecdn.com\/.+\.mp4 reject
 ^https:\/\/www1.elecfans.com\/www\/delivery reject
 
-#!携程
+# 携程
 ^https?:\/\/m\.ctrip\.com\/restapi\/[\w\/]+tripAds reject
 
-#!微店
+# 微店
 ^https?:\/\/thor\.weidian\.com\/ares\/home\.splash\/ reject
 
-#!汽车之家
+# 汽车之家
 ^https?:\/\/adproxy\.autohome\.com\.cn\/AdvertiseService\/ reject-200
 
-#!豆瓣
+# 豆瓣
 ^https?:\/\/api\.douban\.com\/v2\/app_ads\/splash reject
 
-#!识货
+# 识货
 ^https:\/\/sh-gateway\.shihuo\.cn\/v4\/services\/sh-adapi\/home\/screen\? reject
 ^https:\/\/sh-gateway\.shihuo\.cn\/v4\/services\/sh-adapi\/home\/ad\/ reject
 ^https:\/\/sh-gateway\.shihuo\.cn\/v3\/sh-api\/sh\/searchSpeed\/hotWordSearch reject-200
 ^https:\/\/sh-gateway\.shihuo\.cn\/v4\/services\/sh-appapi\/search\/soaringlist reject-200
 ^https:\/\/sh-gateway\.shihuo\.cn\/v4\/services\/sh-appapi\/search\/act reject-200
 
-#!美团
+# 美团
 ^http:\/\/wmapi\.meituan\.com\/api\/v7\/(loadInfo|openscreen|startpicture)\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
 ^https:\/\/flowplus\.meituan\.net\/v1\/mss_\w+\/linglong\/\d+\.jpg data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
@@ -59,37 +59,37 @@
 
 ^https:\/\/s3plus\.meituan\.net\/v1\/mss_\w+\/(brandcpt-vedio|waimai-alita)\/\w+\.zip$ data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
-#!大众
+# 大众
 ^https:\/\/img\.meituan\.net\/dpmobile\/.+93241\.png reject
 ^https:\/\/img\.meituan\.net\/dpmobile\/\w+\.(gif|jpg|png)\.(webp)$ reject
 
-#!小黑盒
+# 小黑盒
 ^https:\/\/api\.xiaoheihe\.cn\/account\/get_ads_info_v2\?lang reject-dict
 
-#!顺丰小程序
+# 顺丰小程序
 ^https:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/member(Goods\/pointMallService\/goodsList|Manage\/memberEquity\/queryRecommendEquity|ActLengthy\/fullGiveActivityService\/fullGiveInfo) reject-dict
 ^https:\/\/ucmp\.sf-express\.com\/proxy\/operation-platform\/info-flow-adver\/query reject-dict
 ^https:\/\/ucmp-static\.sf-express\.com\/proxy\/wxbase\/wxTicket\/wxLiveStreamInfo\?pageNo reject-dict
 ^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/integralPlanet\/getCxAdvertiseList reject-dict
 
-#!机核
+# 机核
 ^https?:\/\/www\.gcores\.com\/gapi\/v1\/app-start-pages\?page reject-dict
 
-#!必胜客
+# 必胜客
 ^https?:\/\/res\.pizzahut\.com\.cn\/CRM\/phad\/apphome\/apphome reject
 ^https?:\/\/res\.pizzahut\.com\.cn\/CRM\/phad\/member\/app\/member reject-200
 
-#!麦当劳
+# 麦当劳
 ^https?:\/\/api\.mcd\.cn\/bff\/portal\/home\/splash reject-200
 
-#!肯德基
+# 肯德基
 ^https?:\/\/res\.kfc\.com\.cn\/CRM\/kfcad\/apphome6\/\w+\.json\? reject-dict
 ^https?:\/\/res\.kfc\.com\.cn\/CRM\/kfcad\/apphome5\/apphome reject-200
 
-#!和风天气
+# 和风天气
 ^https:\/\/hfapp-service\.qweather\.net\/v2\.0\/app\/ad\/list\? reject-dict
 
 
-[MITM]
+[Mitm]
 hostname =
 aes.acfun.cn,api-new.app.acfun.can,api.flydigi.com,flowplus.meituan.net, img.meituan.net, s3plus.meituan.net,qapi.huolala.cn, appuser-static.huolala.cn,acs.m.taobao.com,app.dewu.com,elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com,m.ctrip.com,thor.weidian.com,adproxy.autohome.com.cn,api.douban.com,sh-gateway.shihuo.cn,api.xiaoheihe.cn,ucmp.sf-express.com,ucmp-static.sf-express.com,mcs-mimp-web.sf-express.com,www.gcores.com,res.pizzahut.com.cn,api.mcd.cn,res.kfc.com.cn,hfapp-service.qweather.net
