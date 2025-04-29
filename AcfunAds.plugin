@@ -28,4 +28,4 @@ URL-REGEX,^https?://.*\.ksapisrv\.com/api/ad/.*,REJECT
 
 [Script]
 # 网页端广告元素清理
-http-response ^https?://www\.acfun\.cn/.* script-path=https://raw.githubusercontent.com/7CupT4a/loon/refs/heads/main/MiyousheAds.plugin
+http-response ^https?://www\.acfun\.cn/.* script-path=https://raw.githubusercontent.com/7CupT4a/loon/refs/heads/main/acfun.js
