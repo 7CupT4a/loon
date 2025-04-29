@@ -7,7 +7,7 @@
 mitm-hostname = *.mihoyo.com, *.hoyoverse.com, *.yuanshen.com, *.biligame.com
 
 # 脚本配置
-script-path = https://raw.githubusercontent.com/example/mihoyo-adblock/main/mhy-ads.js
+script-path = https://raw.githubusercontent.com/7CupT4a/loon/refs/heads/main/Mhy-ads.js
 types = http-response, requires-body=true
 max-size = 3145728
 timeout = 30
