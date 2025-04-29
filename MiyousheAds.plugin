@@ -1,0 +1,28 @@
+// Loon插件：屏蔽米游社广告
+// 更新时间：2025-04-30
+// 功能：拦截广告请求 + 隐藏广告元素
+
+[General]
+# MitM解密域名（覆盖米游社主站及CDN）
+mitm-hostname = *.mihoyo.com, *.hoyoverse.com, *.yuanshen.com, *.biligame.com
+
+# 脚本配置
+script-path = https://raw.githubusercontent.com/example/mihoyo-adblock/main/mhy-ads.js
+types = http-response, requires-body=true
+max-size = 3145728
+timeout = 30
+
+[Rule]
+# 核心广告域名拦截
+DOMAIN,ad.mihoyo.com,REJECT
+DOMAIN-SUFFIX,mihoyo-ad.com,REJECT
+DOMAIN-KEYWORD,adsystem,REJECT
+URL-REGEX,^https?://.*\.mihoyo\.com/.*/(ads|promotion)/.*,REJECT
+
+# 屏蔽第三方广告联盟（如腾讯广告）
+DOMAIN-SUFFIX,e.qq.com,REJECT
+URL-REGEX,^https?://.*\.googlesyndication\.com/.*,REJECT
+
+[Script]
+# 网页端广告元素隐藏
+http-response ^https?://(bbs\.mihoyo\.com|www\.hoyolab\.com)/.* script-path=https://raw.githubusercontent.com/example/mhy-adblock/main/mhy-ads.js
